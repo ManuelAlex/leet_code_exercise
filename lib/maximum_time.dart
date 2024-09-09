@@ -20,11 +20,11 @@ class Solution{
    constructTime (String givenString){
     final List<String> part = givenString.split(':');
 final String hhPart =part.first;
-final String mmPart =part.last;
-final String hFirst = hhPart[0];
-final String hLast = hhPart[1];
-final String mFirst = mmPart[0];
-final String mLast = mmPart[1];
+//final String mmPart =part.last;
+// final String hFirst = hhPart[0];
+// final String hLast = hhPart[1];
+// final String mFirst = mmPart[0];
+// final String mLast = mmPart[1];
 
     return hhPart;
   }
