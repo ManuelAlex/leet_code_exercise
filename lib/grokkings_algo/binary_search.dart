@@ -1,8 +1,9 @@
 void main(){ 
-  print(recursiveBinarySearch([1, 3, 5, 7, 9,11,13,15,17,19,21,23,25,27,29,31],11));
-BinarySearch().selectionSort([5,3,4,6,7,1,9,2,8]);
+  triangle(8);
+//   print(recursiveBinarySearch([1, 3, 5, 7, 9,11,13,15,17,19,21,23,25,27,29,31],11));
+// BinarySearch().selectionSort([5,3,4,6,7,1,9,2,8]);
   
-  BinarySearch(). searchNumber([1, 3, 5, 7, 9,11,13,15,17,19,21,23,25,27,29,31],31);
+//   BinarySearch(). searchNumber([1, 3, 5, 7, 9,11,13,15,17,19,21,23,25,27,29,31],31);
 }
 
 class BinarySearch{
@@ -91,6 +92,19 @@ void countDown(int i) {
   } else {
     print(i);
     countDown(i - 1);
+  }
+}
+void triangle(int baseLength){
+  if(baseLength<=0){
+    return;
+  }
+  else{
+    int count =1;
+    if(count>=0&&count<=baseLength){
+    print("x"*(count));
+    triangle(count + 1);
+    count++;
+    }
   }
 }
 
