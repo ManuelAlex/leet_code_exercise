@@ -34,8 +34,7 @@ void main() {
 class Solution {
   List<int> twoSum(List<int> nums, int target) {
  
- //loop tru all the list and add the num with others 
- 
+//  loop tru all the list and add the num with others  
 //  for(int i=0;i<nums.length;i++){
 //   final resolvedList= nums.sublist(i+1,)+nums.sublist(0,i);
 
