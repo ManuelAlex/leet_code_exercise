@@ -1,6 +1,6 @@
 void main() {
   final Solution solution = Solution();
-  print(solution.digitToBinary(255));
+  print(solution.digitToBinary(10));
 }
 
 // class Solution {
