@@ -2,8 +2,10 @@ import 'dart:math';
 
 void main() {
   final Solution solution = Solution();
-  print(solution.posRMSt(10));
-  print(solution.posRMStOptimed(10));
+  // print(solution.posRMSt(10));
+  //print(solution.posRMStOptimed(10));
+  //print(solution.countRightMostSetBit(42));
+  print(solution.checkIfNisAPowOf2(4));
 }
 
 class Solution {
@@ -32,5 +34,19 @@ class Solution {
     // 8=2pow3
     int pos = ((log(value) / log(2)).floor()) + 1;
     return pos;
+  }
+
+  int countRightMostSetBit(int n) {
+    int count = 0;
+    while (n != 0) {
+      n = n & n - 1;
+
+      count++;
+    }
+    return count;
+  }
+
+  bool checkIfNisAPowOf2(int n) {
+    return n == 0 ? false : n & (n - 1) == 0;
   }
 }
